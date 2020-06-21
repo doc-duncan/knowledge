@@ -26,3 +26,29 @@ The logger function could then be called:
 ```javascript
 logger.log('Hello World!');
 ```
+Single and double quotes are equal, *but when converted to JSON everything is double*.
+
+CLI node args are available via `process.argv`. The first two elements are boiler plate so be sure to skip these.
+
+`__filename` and `__dirname` are available in the module.
+
+Sample template string:
+```
+var test = 'World'
+console.log(`Hello ${test}`)
+```
+
+#### JavaScript Promises
+
+Prior to Promises there was exclusively callbacks. With callbacks you would make a request to an API, let's say, and when the API would return there would be a callback function that would be called. With this structure you could easily get caught in a chain of nested callbacks. 
+
+Then along came promises, which are actually JS objects. *Promises have states*: pending, fulfilled and rejected. There are two main methods used to react to a change in promise state:
+
+`promise.then()` - runs perscribed code when the corresponding promise is *fulfilled*.
+
+`promise.catch()` - runs perscribed code whtn the corresponding promise is *rejected*.
+
+It is worth noting that when chaining promises together, *only one catch method is needed and it will catch any rejection in the chain*.
+
+#### JavaScript Objects
+
