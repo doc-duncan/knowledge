@@ -34,8 +34,8 @@ CLI node args are available via `process.argv`. The first two elements are boile
 
 Sample template string:
 ```
-var test = 'World'
-console.log(`Hello ${test}`)
+var test = 'World';
+console.log(`Hello ${test}`);
 ```
 
 #### JavaScript Promises
@@ -52,3 +52,19 @@ It is worth noting that when chaining promises together, *only one catch method 
 
 #### JavaScript Objects
 
+Javascript object attributes and functions can be accessed via dot notation or array index notation (square brackets). *However, if you are accessing an object attribute/function using a variable you must use array index notation*:
+```javascript
+var test = 'hello';
+var obj = {
+    hello: 'world'
+}
+console.log(obj[test]);
+console.log(obj.test); //UNDEFINED
+```
+Dynamic keys can also be used by leveraging array index notation:
+```javascript
+var test = 'hello'
+var obj = {
+    [test]: 'World'
+}
+```
