@@ -3,6 +3,7 @@
 # Git Rebase
 
 Rebase your current branch onto `<base>` (which can be an ID, branch name, tag...)
+
 `git rebase <base>` 
 
 Rebasing is the process of rewriting a branch's commits to a base commit. Essentially, it reshapes things to how they would be if you created the feature branch from a different base commit.
