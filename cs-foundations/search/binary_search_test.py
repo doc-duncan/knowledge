@@ -34,3 +34,6 @@ class BinarySearchTest(unittest.TestCase):
         max_pos = len(arr) - 1
         answer = binary_search.binary_search(arr, val, min_pos, max_pos)
         self.assertEqual(False, answer)
+
+if __name__ == '__main__':
+    unittest.main()
