@@ -32,5 +32,11 @@ class LinearSearchTest(unittest.TestCase):
         answer = linear_search.linear_search(arr,val)
         self.assertEqual(-1,answer)
 
+    def test_linear_search_present_duplicate(self):
+        arr = [9,54,23,10,17,23]
+        val = 23
+        answer = linear_search.linear_search(arr,val)
+        self.assertEqual(2,answer)
+
 if __name__ == '__main__':
     unittest.main()
