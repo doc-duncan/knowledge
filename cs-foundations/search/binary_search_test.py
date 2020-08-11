@@ -2,7 +2,7 @@ import unittest
 import binary_search
 
 
-class SearchAlgorithmsTest(unittest.TestCase):
+class BinarySearchTest(unittest.TestCase):
     def test_binary_search_even_true(self):
         arr = [5,9,10,73]
         val = 73
