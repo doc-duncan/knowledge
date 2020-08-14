@@ -1,7 +1,5 @@
 ## A repo to hold knowledge so it is never lost...
 
-![Image of Doc Brown](Doc.jpg)
-
 ## Table Of Contents:
 
 **CS Foundations**
@@ -32,3 +30,5 @@
 **Security**
 * *Concepts*
     * [rsa encryption](security/rsa-encryption/rsa-encryption.md)
+
+![Image of Doc Brown](Doc.jpg)
