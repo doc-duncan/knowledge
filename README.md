@@ -12,7 +12,7 @@
     * [selection sort](cs-foundations/sort/selection_sort.py)
 
 **Git**
-* *Comands*
+* *Commands*
     * [merge](git/merge/merge.md)
     * [rebase](git/rebase/rebase.md)
 * *Conventions*
