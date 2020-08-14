@@ -1,6 +1,6 @@
-## A repo to hold knowledge so it is never lost...
+## repo to hold knowledge so it is never lost...
 
-## Table Of Contents:
+### Table Of Contents:
 
 **CS Foundations**
 * *Searching Algorithms*
