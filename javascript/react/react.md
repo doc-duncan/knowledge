@@ -24,6 +24,8 @@ There are four three main packages, listed below, that need to be configured pro
 
     `npm install webpack webpack-cli --save-dev`
 
+    **Note: This installation may produce warnings with fsevents and chokidar dependencies. This should be fixed in webpack version 5, which is in beta as of now (Aug. 2020).**
+
     **configuration**
     1. Add the following to `package.json`
         ```javascript
@@ -70,6 +72,7 @@ There are four three main packages, listed below, that need to be configured pro
 3. **react and react-dom** - `react` is the main package for React, while `react-dom` allows for React specific DOM interaction.
 
     **installation**
+    
     `npm install react react-dom`
 
 ### Sources
