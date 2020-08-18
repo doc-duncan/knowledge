@@ -75,7 +75,14 @@ There are four three main packages, listed below, that need to be configured pro
     
     `npm install react react-dom`
 
-### Sources
+### `.gitignore`
+```
+node_modules/
+dist/
+.DS_Store # if mac
+```
+
+## Sources
 **Disclaimer: info. for this page has been sourced from the following:**
 
 1. [React Tutorial](https://www.youtube.com/watch?v=DLX62G4lc44)
