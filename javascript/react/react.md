@@ -13,74 +13,153 @@ From my own research, there are a few main points that give React its popularity
 3. **React is maintained by Facebook, which should result in years of solid maintenance and development**.
 
 ## Setting Up Sample Project (Without `create-react-app`)
-An easy way to initialize a new React project is with `create-react-app`, however, if you are new to React like me then you may want to initialize the project and its dependencies manually so it is not a black box. The fourth article in [sources](#sources) was extremely helpful in learning this process. 
+An easy way to initialize a new React project is with `create-react-app`, however, if you are new to React like me then you may want to initialize the project and its dependencies manually so it is not a black box. The fourth and fifth [sources](#sources) were extremely helpful in learning this process. 
 
-### Dependency Management
-There are four three main packages, listed below, that need to be configured properly to start your journey with React.
+### Create New Project
+1. Initialize new npm project
+    ```sh
+    mkdir <my-project-dir>
+    cd <my-project-dir>
+    # initialize npm project with default package.json
+    npm init -y 
+    ```
+2. Initialize git
+    
+    `git init`
 
-1. **webpack** - In a general sense, webpack is a code bundler that ingests, transforms and bundles target code and outputs it as a minified resource. Specifically to React, it ingests components and outputs bundled JS code that the majority of browsers can interpret. Webpack works off of a file named `webpack.config.js`, which specifies settings for building your application. For a detailed explanation of setting up webpack please reference the fifth article of [sources](#sources).
+3. Add `.gitignore`
+    ```sh
+    # pushing and pulling all packages would be time consuming and overwhelming
+    node_modules/
+    # don't want to push builds
+    dist/
+    # if mac
+    .DS_Store
+    ```
 
-    **installation**
+3. Finish directory structure
+    ```sh
+    # cwd = <my-project-dir>
+    mkdir app
+    cd app
+    # base source page
+    touch index.js
+    ```
+    
+4. Add template `index.html` page to `app`
 
-    `npm install webpack webpack-cli --save-dev`
+    This page is the base page used by webpack and `html-webpack-plugin` to construct the final `dist/index.html` page.
 
-    **Note: This installation may produce warnings with fsevents and chokidar dependencies. This should be fixed in webpack version 5, which is in beta as of now (Aug. 2020).**
+    ```html
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>React Demo</title>
+      </head>
+      <body>
+        <div id='app'></div>
+      </body>
+    </html>
+    ```
 
-    **configuration**
-    1. Add the following to `package.json`
-        ```javascript
-        "scripts": {
-            "build": "webpack --mode production"
-        }
-        ```
-    2. Add the following webpack configuration to `webpack.config.js` in the root directory. This configuration states, "For every file with a js or jsx extension Webpack pipes the code through babel-loader."
-        ```javascript
-        module.exports = {
-            module: {
-                rules: [
-                {
-                    test: /\.(js|jsx)$/,
-                    exclude: /node_modules/,
-                    use: {
-                    loader: "babel-loader"
-                    }
-                }
-                ]
-            }
-        };
-        ```
+### Install Dependencies
+There are three main assets, listed below, that need to be configured properly to start your journey with React.
 
-2. **babel** - Babel is a transpiler, which takes current JS code and syntax and transforms it to be compatible with older browsers. Webpack relies on Babel for this transformation to produce its output.
-
-    **installation**
-
-    `npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev`
-    - @babel/core is the main package
-    - babel-loader is needed by webpack to interface with babel
-    - @babel/preset-env is needed by babel for compiling modern JS to ES5
-    - @babel/preset-react is needed by babel for compiling React and more specifically, JSX, to JS
-
-    **configuration**
-
-    1. Create a new file named `.babelrc` at the project root (this is babel configuration)
-        ```javascript
-        {
-            "presets": ["@babel/preset-env", "@babel/preset-react"]
-        }
-        ```
-
-3. **react and react-dom** - `react` is the main package for React, while `react-dom` allows for React specific DOM interaction.
+1. `react` and `react-dom` - `react` is the main package for React, while `react-dom` allows for React specific DOM interaction. They are managed as two separate packages so that `react` can be used for other user interfaces outside of the browser.
 
     **installation**
     
     `npm install react react-dom`
 
-### `.gitignore`
+2. `babel` - a transpiler, which takes current JS code and syntax and transforms it to be compatible with older browsers. More specifically to React, Babel is responsible for compiling JSX to browser compatible code. Part of the Webpack process (described below) is calling Babel to perform the transformations.
+
+    **installation**
+
+    `npm install @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev`
+    - `@babel/core` is the main package
+    - `babel-loader` is needed by webpack to interface with babel
+    - `@babel/preset-env` is needed by babel for compiling modern JS
+    - `@babel/preset-react` is needed by babel for compiling React and more specifically, JSX
+
+    **configuration**
+
+    Create a new file named `.babelrc` at the project root. This file specifies the babel configuration (what babel should use when given some module).
+    ```javascript
+    {
+        "presets": ["@babel/preset-env", "@babel/preset-react"]
+    }
+    ```
+
+3. **webpack** - In a general sense, webpack is a code/module bundler that ingests, transforms and bundles target code and outputs it as a minified resource. Specifically to React, it ingests components and outputs bundled JS code that the majority of browsers can interpret. After webpack is done with its work there is a single JS file with all of your code. Webpack works off of a file named `webpack.config.js`, which specifies settings for building this output. For a detailed explanation of setting up webpack please reference the sixth article of [sources](#sources).
+
+    **installation**
+
+    Install the base packages
+
+    `npm install webpack webpack-cli --save-dev`
+
+    **Note: This installation may produce warnings with fsevents and chokidar dependencies. This should be fixed in webpack version 5, which is in beta as of now (Aug. 2020).**
+
+    The `html-webpack-plugin` initially tripped me up, but it is actually really useful. This plugin is used by webpack to generate a final HTML page in your `dist` folder. It takes in a template HTML page that it copies to create the new one, but it automatically includes a `<script>` tag that references your bundled JS code.
+
+    `npm install html-webpack-plugin --save-dev`
+
+    **configuration**
+    1. Add the following webpack configuration to `webpack.config.js` in the root directory.
+        ```javascript
+        const path = require('path');
+        const HtmlWebpackPlugin = require('html-webpack-plugin');
+        module.exports = {
+            // where the main module is
+            entry: './app/index.js',
+            // where to output bundled code (will automatically create dist folder)
+            output: {
+                path: path.resolve(__dirname, 'dist'),
+                filename: 'index_bundle.js'
+            },
+            module: {
+                rules: [
+                    // any JS module, run it through babel-loader
+                    { test: /\.(js)$/, use: 'babel-loader' }
+                ]
+            },
+            // 'development' or 'production'
+            mode: 'development',
+            plugins: [
+                new HtmlWebpackPlugin({
+                    template: 'app/index.html'
+                })
+            ]
+        };
+        ```
+    
+    2. Add the following to `package.json`
+        ```javascript
+        "scripts": {
+            // compile JS code
+            "build": "webpack"
+        }
+        ```
+
+### Webpack Dev Server
+When developing you don't want to have to build your code all the time to the `dist` directory. By using the webpack dev. server you can avoid this because it continuously builds an updated bundle to its cache, which is efficient. The server uses hot reloading so you only have to start it up once.
+
+**installation**
+
+`npm install webpack-dev-server --save-dev`
+
+**configuration**
+
+Add the following to `package.json`
+```javascript
+"scripts": {
+    // start dev server
+    "start": "webpack-dev-server --open"
+}
 ```
-node_modules/
-dist/
-.DS_Store # if mac
-```
+
+### Build Process Recap
+![build process](images/build-process.jpg)
 
 ## Sources
 **Disclaimer: info. for this page has been sourced from the following:**
@@ -89,4 +168,5 @@ dist/
 2. [React Speed Justification (Or Not?)](https://stackoverflow.com/questions/33355125/what-really-makes-reactjs-as-fast-as-it-claims-to-be)
 3. [JSX](https://reactjs.org/docs/introducing-jsx.html)
 4. [Set Up React Project From Scratch](https://www.valentinog.com/blog/babel/)
-5. [What Is webpack?](https://dev.to/vish448/webpack-for-react-intro-3n01)
+5. [Set Up React Project From Scratch Video (Preferred)](https://www.youtube.com/watch?v=Zb2mQyQRwqc)
+6. [What Is webpack?](https://dev.to/vish448/webpack-for-react-intro-3n01)
