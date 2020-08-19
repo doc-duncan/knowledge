@@ -71,7 +71,7 @@ There are three main assets, listed below, that need to be configured properly t
     
     `npm install react react-dom`
 
-2. `babel` - a transpiler, which takes current JS code and syntax and transforms it to be compatible with older browsers. More specifically to React, Babel is responsible for compiling JSX to browser compatible code. Part of the Webpack process (described below) is calling Babel to perform the transformations.
+2. `babel` - a transpiler, which takes current JS code and syntax and transforms it to be compatible with older browsers. More specifically to React, Babel is responsible for compiling JSX to browser compatible code. Part of the webpack process (described below) is calling Babel to perform the transformations.
 
     **installation**
 
@@ -90,7 +90,7 @@ There are three main assets, listed below, that need to be configured properly t
     }
     ```
 
-3. **webpack** - In a general sense, webpack is a code/module bundler that ingests, transforms and bundles target code and outputs it as a minified resource. Specifically to React, it ingests components and outputs bundled JS code that the majority of browsers can interpret. After webpack is done with its work there is a single JS file with all of your code. Webpack works off of a file named `webpack.config.js`, which specifies settings for building this output. For a detailed explanation of setting up webpack please reference the sixth article of [sources](#sources).
+3. `webpack` - In a general sense, webpack is a code/module bundler that ingests, transforms and bundles target code and outputs it as a minified resource. Specifically to React, it ingests components and outputs bundled JS code that the majority of browsers can interpret. After webpack is done with its work there is a single JS file with all of your code. Webpack works off of a file named `webpack.config.js`, which specifies settings for building this output. For a detailed explanation of setting up webpack please reference the sixth article of [sources](#sources).
 
     **installation**
 
@@ -141,7 +141,7 @@ There are three main assets, listed below, that need to be configured properly t
         }
         ```
 
-### Webpack Dev Server
+### `webpack` Dev Server
 When developing you don't want to have to build your code all the time to the `dist` directory. By using the webpack dev. server you can avoid this because it continuously builds an updated bundle to its cache, which is efficient. The server uses hot reloading so you only have to start it up once.
 
 **installation**
