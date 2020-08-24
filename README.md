@@ -1,37 +1,37 @@
 ## repo to hold knowledge so it is never lost...
 
-### Table Of Contents:
+### table of contents:
 
-**CS Foundations**
-* *Searching Algorithms*
+**cs foundations**
+* *searching algorithms*
     * [binary search](cs-foundations/search/binary_search.py)
     * [linear search](cs-foundations/search/linear_search.py)
-* *Sorting Algorithms*
+* *sorting algorithms*
     * [selection sort](cs-foundations/sort/selection_sort.py)
 
-**Git**
-* *Commands*
+**git**
+* *commands*
     * [merge](git/merge/merge.md)
     * [rebase](git/rebase/rebase.md)
-* *Conventions*
+* *conventions*
     * [gitignore](git/gitignore.md)
 
-**Javascript**
-* *Libraries/Engines*
+**javascript**
+* *libraries/engines*
     * [electron](javascript/electron.md)
     * [node](javascript/node.md)
     * [react](javascript/react)
 
-**Python**
-* *Testing*
+**python**
+* *testing*
     * [unittest](python/unittest.md)
-* *Libraries*
+* *libraries*
     * [pipenv](python/pipenv.md)
-* *Standards*
+* *standards*
     * [docstring](python/docstring.md)
 
-**Security**
-* *Concepts*
+**security**
+* *concepts*
     * [rsa encryption](security/rsa-encryption/rsa-encryption.md)
 
-![Image of Doc Brown](Doc.jpg)
+![image of doc brown](doc.jpg)
