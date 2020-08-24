@@ -8,9 +8,9 @@ documentation for consumers of your code.**
 ### Access
 Docstring documentation can be acessed via two different ways:
 1. the `__doc__` attribute
-  * `print(my_object.__doc__)
+  * `print(my_object.__doc__)`
 2. the `help` function
-  * `help(my_object)
+  * `help(my_object)`
 
 ### Syntax
 * Triple quotes are used to designate Docstrings. Either single or double quotes may be used, but the standard convention is to use double quotes.
