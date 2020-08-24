@@ -1,37 +1,37 @@
-## repo to hold knowledge so it is never lost...
+a repo to hold knowledge so it is never lost...
 
-### table of contents:
+# table of contents
 
-**cs foundations**
-* *searching algorithms*
-    * [binary search](cs-foundations/search/binary_search.py)
-    * [linear search](cs-foundations/search/linear_search.py)
-* *sorting algorithms*
-    * [selection sort](cs-foundations/sort/selection_sort.py)
+## cs foundations
+### searching algorithms
+1. [binary search](cs-foundations/search/binary_search.py)
+2. [linear search](cs-foundations/search/linear_search.py)
+### sorting algorithms
+1. [selection sort](cs-foundations/sort/selection_sort.py)
 
-**git**
-* *commands*
-    * [merge](git/merge/merge.md)
-    * [rebase](git/rebase/rebase.md)
-* *conventions*
-    * [gitignore](git/gitignore.md)
+## git
+### commands
+1. [merge](git/merge/merge.md)
+2. [rebase](git/rebase/rebase.md)
+### standards
+1. [gitignore](git/gitignore.md)
 
-**javascript**
-* *libraries/engines*
-    * [electron](javascript/electron.md)
-    * [node](javascript/node.md)
-    * [react](javascript/react)
+## javascript
+### libraries/engines
+1. [electron](javascript/electron.md)
+2. [node](javascript/node.md)
+3. [react](javascript/react)
 
-**python**
-* *testing*
-    * [unittest](python/unittest.md)
-* *libraries*
-    * [pipenv](python/pipenv.md)
-* *standards*
-    * [docstring](python/docstring.md)
+## python
+### testing
+1. [unittest](python/unittest.md)
+### libraries
+1. [pipenv](python/pipenv.md)
+### standards
+1. [docstring](python/docstring.md)
 
-**security**
-* *concepts*
-    * [rsa encryption](security/rsa-encryption/rsa-encryption.md)
+## security
+### standards
+1. [rsa encryption](security/rsa-encryption/rsa-encryption.md)
 
 ![image of doc brown](doc.jpg)
