@@ -1,4 +1,4 @@
-*Disclaimer: Info. for this page was sourced from [here](https://levelup.gitconnected.com/what-does-create-react-app-actually-do-73c899443d61)
+*Disclaimer: Info. for this page was sourced from [here](https://levelup.gitconnected.com/what-does-create-react-app-actually-do-73c899443d61)*
 
 # Create-React-App
 
