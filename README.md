@@ -4,8 +4,8 @@
 
 **CS Foundations**
 * *Searching Algorithms*
-    * [linear search](cs-foundations/search/linear_search.py)
     * [binary search](cs-foundations/search/binary_search.py)
+    * [linear search](cs-foundations/search/linear_search.py)
 * *Sorting Algorithms*
     * [selection sort](cs-foundations/sort/selection_sort.py)
 
@@ -18,6 +18,7 @@
 
 **Javascript**
 * *Libraries/Engines*
+    * [electron](javascript/electron.md)
     * [node](javascript/node.md)
     * [react](javascript/react)
 
