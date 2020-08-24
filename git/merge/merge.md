@@ -6,7 +6,7 @@
 
 For example, assume below that we are on master and run `git merge <feature-branch-name>`. This will take branch `<feature-branch-name>` and merge its commit history with master and create a new merge commit at the end.
 
-![merge](merge.jpg)
+![merge](images/merge.jpg)
 
 ## Conflicts
 
@@ -22,11 +22,11 @@ The fast forward merge is used when the target branch is just an extension of th
 
 Before Fast Forward Merge
 
-![before-ff](before-ff.jpg)
+![before-ff](images/before-ff.jpg)
 
 After Fast Forward Merge
 
-![after-ff](after-ff.jpg)
+![after-ff](images/after-ff.jpg)
 
 ## Three Way Merge
 
