@@ -27,6 +27,8 @@
     * [unittest](python/unittest.md)
 * *Libraries*
     * [pipenv](python/pipenv.md)
+* *Standards*
+    * [docstring](python/docstring.md)
 
 **Security**
 * *Concepts*
