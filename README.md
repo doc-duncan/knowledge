@@ -18,6 +18,7 @@
 
 **Javascript**
 * *Libraries/Engines*
+    * [electron](javascript/electron.md)
     * [node](javascript/node.md)
     * [react](javascript/react)
 
