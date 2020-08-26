@@ -44,6 +44,6 @@ To spin up a new env with CRA: `npx create-react-app <app-name>`
 By running `create-react-app` a new git repo is initialized and an initial commit is made
 
 ## Sources
-*Disclaimer: info. for this page was sourced from the following 
+*Disclaimer: info. for this page was sourced from the following*
 1. [What Does CRA Actually Do?](https://levelup.gitconnected.com/what-does-create-react-app-actually-do-73c899443d61)*
 2. [create-react-app](https://github.com/facebook/create-react-app)
