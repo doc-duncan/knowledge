@@ -33,3 +33,7 @@ So we know that react-scripts brings many dependencies together, but what exactl
 Well, if you remember, our `package.json` has multiple scripts that map to `react-scripts` calls. For example, the `npm start` command is used to run `react-scripts start`. When a script is called like this, `react-scripts` first makes sure that the argument is acceptable (`start`, `test`, `build`...). If the arg. passes inspection, then control is passed to the script with the following format: `/scripts/<arg>.js` (here it would be `scripts/start.js`). The `start.js` script then interfaces with Webpack to spin up a dev server on the specified port.
 
 This is a short overview and encompasses a high level of the source article. I will potentially expand on this in the future to dive deeper into the scripts and Webpack.
+
+## defaults
+
+By default, react-scripts looks at the `public` directory for index.html and the final build will be in the `build` directory.
