@@ -101,3 +101,4 @@ The second [source](#sources) is a great resource for explaining the sample app 
 *Disclaimer: Info. for this page was sourced from the following*
 1. [What is Electron?](https://brainhub.eu/blog/what-is-electron-js/)
 2. [Electron First App.](https://www.electronjs.org/docs/tutorial/first-app)
+3. [Getting Started With Electron - Video Series (Highly Recommend)](https://www.youtube.com/watch?v=GwxSkNkP67o)
