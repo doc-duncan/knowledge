@@ -6,9 +6,12 @@ Electron is a framework that allows you to build cross-platform desktop applicat
 ## Why Electron?
 The beauty of Electron is that you get the system integration of traditional native applications and the versatility and consistency of web application development. This is made possible through two main components:
 
-1. Electron applications include an embeded chrome browser. This means that you can use all of your favorite JS UI frameworks to build your application. This also means that every deployment of your application, regardless of the underlying OS, will be using the same browser version. This creates automatic consistency accross platforms.
+1. The view of Electron applications is created via chromium (Google's open source browser). This means that you can use all of your favorite JS UI frameworks to build your application. This also means that every deployment of your application, regardless of the underlying OS, will be using the same browser version. This creates automatic consistency accross platforms.
 
 2. Electron exposes the node API, which gives you system integration, such as interacting with the file system.
+
+## Main Process vs. Render Process
+Electron can kind of be split up into a "client side" and a "server side". The client side would be the code running that renders the view. This would be your HTML and frontend JS, which is referred to as the render process. The server side is Electron's entrypoint. This is the behind the scenes work that launches windows, controls flow and interacts with node (this is your main.js).
 
 ## Sample Application
 The second [source](#sources) is a great resource for explaining the sample app and **how electron and node relate**. "Electron apps are developed in JavaScript using the same principles and methods found in Node.js development."
@@ -19,7 +22,7 @@ The second [source](#sources) is a great resource for explaining the sample app 
     # initialize npm project with default package.json
     npm init -y 
     ```
-    Be sure your `package.json` file has a `"main"` key pointing to the main JS file (if this is excluded Electron will look for `index.js`)
+    Be sure your `package.json` file has a `"main"` key pointing to the main JS file (this is Electron's entrypoint)
 
     ```javascript
     {
@@ -30,7 +33,7 @@ The second [source](#sources) is a great resource for explaining the sample app 
     }
     ```
 
-    Add Electron start script to `package.json`...by default `npm start` would run the main script with Node, so we need to overwrite this so it runs with `electron`
+    Add Electron start script to `package.json` (this will kick off the Electron process)
 
     ```javascript
     "scripts": {
@@ -98,3 +101,4 @@ The second [source](#sources) is a great resource for explaining the sample app 
 *Disclaimer: Info. for this page was sourced from the following*
 1. [What is Electron?](https://brainhub.eu/blog/what-is-electron-js/)
 2. [Electron First App.](https://www.electronjs.org/docs/tutorial/first-app)
+3. [Getting Started With Electron - Video Series (Highly Recommend)](https://www.youtube.com/watch?v=GwxSkNkP67o)
