@@ -9,6 +9,10 @@ a repo to hold knowledge so it is never lost...
 ### sorting algorithms
 1. [selection sort](cs-foundations/sort/selection_sort.py)
 
+## general
+### standards
+1. [semantic versioning](general/semver.md)
+
 ## git
 ### commands
 1. [merge](git/merge/merge.md)
