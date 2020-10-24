@@ -1,4 +1,4 @@
-# Package.json
+## Package.json
 
 *disclaimer: info. for this page was sourced from [here](https://stackabuse.com/caret-vs-tilde-in-package-json/) and [here](https://michaelsoolee.com/npm-package-tilde-caret/)
 
