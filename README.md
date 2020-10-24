@@ -15,12 +15,14 @@ a repo to hold knowledge so it is never lost...
 2. [rebase](git/rebase/rebase.md)
 ### standards
 1. [gitignore](git/gitignore.md)
+2. [hooks](git/hooks.md)
 
 ## javascript
 ### libraries/engines
 1. [electron](javascript/electron.md)
 2. [node](javascript/node.md)
 3. [react](javascript/react)
+4. [package.json](javascript/package-json.md)
 
 ## python
 ### testing
