@@ -21,12 +21,14 @@
 4. [react](javascript/react)
 
 #### miscellaneous
-1. [semantic versioning](general/semver.md)
+1. [odbc](general/odbc.md)
+2. [semantic versioning](general/semver.md)
 
 #### python
-1. [docstring](python/docstring.md)
-2. [pipenv](python/pipenv.md)
-3. [unittest](python/unittest.md)
+1. [args and kwargs](python/args_kwargs.md)
+2. [docstring](python/docstring.md)
+3. [pipenv](python/pipenv.md)
+4. [unittest](python/unittest.md)
 
 #### security
 1. [rsa encryption](security/rsa-encryption/rsa-encryption.md)
