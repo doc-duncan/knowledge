@@ -15,7 +15,7 @@ my_function(1, 'two', 3.0)
 ### output
 # 1
 # two
-# 3
+# 3.0
 ### end output
 ```
 
