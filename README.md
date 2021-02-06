@@ -33,4 +33,8 @@
 #### security
 1. [rsa encryption](security/rsa-encryption/rsa-encryption.md)
 
+#### testing
+1. [characterization testing](testing/characterization_testing.md)
+2. [the three laws of tdd](testing/the_three_laws_of_tdd.md)
+
 ![image of doc brown](doc.jpg)
