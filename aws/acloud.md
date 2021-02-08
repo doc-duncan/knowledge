@@ -9,7 +9,7 @@
 4. why would you want everything to bill up to the organization?
     1. by billing up to an organization you pay the least cost per unit because the more you use, the less you pay per unit
 5. what needs to be enabled for cross region replication?
-    1. versioning on the target bucket
+    1. versioning on the source and target buckets
 6. does cross region replication replicate objects existing in source when it is turned on
     1. No - only objects moving forward
 7. for cross region replication, do the public permissions replicate to the destination?
