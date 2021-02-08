@@ -1,5 +1,8 @@
 *a repo to hold knowledge so it is never lost*
 
+#### aws
+1. [acloud questions](aws/acloud.md)
+
 #### bash
 1. [basics](bash/basics.md)
 
