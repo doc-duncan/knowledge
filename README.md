@@ -26,10 +26,11 @@
 
 #### python
 1. [args and kwargs](python/args_kwargs.md)
+2. [break vs. continue](python/break_vs_continue.md)
 3. [custom exceptions](python/custom_exceptions.md)
-2. [docstring](python/docstring.md)
-3. [pipenv](python/pipenv.md)
-4. [unittest](python/unittest.md)
+4. [docstring](python/docstring.md)
+5. [pipenv](python/pipenv.md)
+6. [unittest](python/unittest.md)
 
 #### security
 1. [rsa encryption](security/rsa-encryption/rsa-encryption.md)
