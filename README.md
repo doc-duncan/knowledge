@@ -26,6 +26,7 @@
 
 #### python
 1. [args and kwargs](python/args_kwargs.md)
+3. [custom exceptions](python/custom_exceptions.md)
 2. [docstring](python/docstring.md)
 3. [pipenv](python/pipenv.md)
 4. [unittest](python/unittest.md)
