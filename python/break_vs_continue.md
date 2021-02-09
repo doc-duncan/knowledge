@@ -1,3 +1,5 @@
+### `break` vs `continue`
+
 #### Purpose
 Both `break` and `continue` are used to alter the default logic flow of both `for` and `while`
 loops.
