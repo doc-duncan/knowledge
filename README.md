@@ -1,7 +1,9 @@
 *a repo to hold knowledge so it is never lost*
 
 #### aws
-1. [acloud questions](aws/acloud.md)
+1. [acloud](aws/acloud-guru)
+    1. [admin](aws/acloud-guru/admin.md)
+    2. [s3](aws/acloud-guru/s3.md)
 
 #### bash
 1. [basics](bash/basics.md)
