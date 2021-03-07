@@ -4,8 +4,9 @@
 1. [acloud](aws/acloud-guru)
     1. [admin](aws/acloud-guru/admin.md)
     2. [cloudfront](aws/acloud-guru/cloudfront.md)
-    3. [other-storage](aws/acloud-guru/other-storage.md)
-    4. [s3](aws/acloud-guru/s3.md)
+    3. [ec2](aws/acloud-guru/ec2.md)
+    4. [other-storage](aws/acloud-guru/other-storage.md)
+    5. [s3](aws/acloud-guru/s3.md)
 
 #### bash
 1. [basics](bash/basics.md)
