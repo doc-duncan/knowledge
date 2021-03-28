@@ -11,6 +11,13 @@
 1. What is the difference between cloudwatch and cloudtrail?
     1. cloudwatch monitors performance metrics and insight into resources while cloudtrail monitors api calls and interactions with all resources
 
+### SSM Parameter Store
+1. What is SSM Parameter Store hierarchy structure?
+    1. The hierarchy structure of SSM Parameter Store allows you to organize the logical relationships between parameters and give users access to different levels of the hierarchy for parameter access.
+2. What are the main functionality differences between SSM Parameter Store and Secrets Manager?
+    1. Automatically rotate secrets
+    2. Generate random secrets via API
+
 ### Misc.
 1. Which is greater, the number of edge locations or the number of availability zones?
     1. The number of edge locations is larger.
