@@ -1,5 +1,18 @@
 *a repo to hold knowledge so it is never lost*
 
+#### aws
+1. [acloud](aws/acloud-guru)
+    1. [analytics](aws/acloud-guru/analytics.md)
+    2. [application integration](aws/acloud-guru/application-integration.md)
+    3. [compute](aws/acloud-guru/compute.md)
+    4. [database](aws/acloud-guru/database.md)
+    5. [management and governance](aws/acloud-guru/management-and-governance.md)
+    6. [media services](aws/acloud-guru/media-services.md)
+    7. [networking and content delivery](aws/acloud-guru/networking-and-content-delivery.md)
+    8. [security, identity and compliance](aws/acloud-guru/security-identity-and-compliance.md)
+    9. [storage](aws/acloud-guru/storage.md)
+
+
 #### bash
 1. [basics](bash/basics.md)
 
