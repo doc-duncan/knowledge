@@ -2,11 +2,16 @@
 
 #### aws
 1. [acloud](aws/acloud-guru)
-    1. [admin](aws/acloud-guru/admin.md)
-    2. [cloudfront](aws/acloud-guru/cloudfront.md)
-    3. [ec2](aws/acloud-guru/ec2.md)
-    4. [other-storage](aws/acloud-guru/other-storage.md)
-    5. [s3](aws/acloud-guru/s3.md)
+    1. [analytics](aws/acloud-guru/analytics.md)
+    2. [application integration](aws/acloud-guru/application-integration.md)
+    3. [compute](aws/acloud-guru/compute.md)
+    4. [database](aws/acloud-guru/database.md)
+    5. [management and governance](aws/acloud-guru/management-and-governance.md)
+    6. [media services](aws/acloud-guru/media-services.md)
+    7. [networking and content delivery](aws/acloud-guru/networking-and-content-delivery.md)
+    8. [security, identity and compliance](aws/acloud-guru/security-identity-and-compliance.md)
+    9. [storage](aws/acloud-guru/storage.md)
+
 
 #### bash
 1. [basics](bash/basics.md)
