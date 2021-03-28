@@ -1,5 +1,7 @@
-## EC2
+## Compute
 
+
+### EC2
 1. what are the four types of ec2 instance pricing?
     1. on demand - pay for what you use at full price
     2. reserved - contract an ec2 for a given duration of time (discounted)

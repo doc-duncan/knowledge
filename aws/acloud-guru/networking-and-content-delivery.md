@@ -12,3 +12,4 @@
     1. cookies
 5. Draw a diagram showing the retrieval of a CloudFront signed url or cookie.
     ![cloudfront-url-cookies](/aws/acloud-guru/img/cloudfront-url-cookies.jpg)
+
