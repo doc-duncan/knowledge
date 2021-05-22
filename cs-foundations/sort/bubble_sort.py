@@ -8,9 +8,12 @@ Algorithm:
 """
 
 def bubble_sort_iterative(arr, arr_len):
-    for track in range(arr_len):
+    isSorted = False
+    while not isSorted:
+        isSorted = True
         for idx in range(arr_len - 1):
             if arr[idx] > arr[idx + 1]:
                 arr[idx], arr[idx + 1] = arr[idx + 1], arr[idx]
+                isSorted = False
     return arr
         
