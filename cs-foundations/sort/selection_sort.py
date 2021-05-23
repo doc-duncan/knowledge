@@ -1,3 +1,14 @@
+"""
+Selection Sort
+
+Algorithm:
+1. For each index (index_a) in the given list
+    a. Get the value at index_a
+    b. For each index (index_b) in the range (index_a + 1, len(list))
+        1. Initialize the lowest value to the value at index_a
+        2. If the value at index_b is greater than the lowest value then set lowest to value at index_b
+    c. Put lowest value at index_a and swap if necessary
+"""
 def selection_sort(arr,length):
     """Returns a sorted version of the given arr."""
     for min_pos in range(length):
