@@ -35,7 +35,8 @@
 
 #### miscellaneous
 1. [odbc](general/odbc.md)
-2. [semantic versioning](general/semver.md)
+2. [protocol buffers](general/protocol-buffers.md)
+3. [semantic versioning](general/semver.md)
 
 #### python
 1. [args and kwargs](python/args_kwargs.md)
