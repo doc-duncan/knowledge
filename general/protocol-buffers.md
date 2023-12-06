@@ -28,7 +28,7 @@ option go_package = "example.com/sample/samplepb"
 ...
 ```
 
-Now that the boilerplate is out of the way we can add some structured data to our file. We will add a `User` definition as a `message` to our `.proto` file. `message` is the type used by the protocol to describe a logical grouping of data. Within a given `message` we define `fields`, similar to a JSON object. Each `field` is assigned a number, which serves as an identifier, and **not** and actual value, for that field. These identifiers are used by the protocol for encoding and decoding the data.
+Now that the boilerplate is out of the way we can add some structured data to our file. We will add a `User` definition as a `message` to our `.proto` file. `message` is the type used by the protocol to describe a logical grouping of data. Within a given `message` we define `fields`, similar to a JSON object. Each `field` is assigned a number, which serves as an identifier, and **not** an actual value, for that field. These identifiers are used by the protocol for encoding and decoding the data.
 
 ```protobuf
 ...
