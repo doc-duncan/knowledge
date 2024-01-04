@@ -27,6 +27,13 @@
 3. [merge](git/merge/merge.md)
 4. [rebase](git/rebase/rebase.md)
 
+#### go
+1. [basics](go/basics.md)
+2. [proxy and checksum](go/proxy-and-checksum.md)
+
+#### graphql
+1. [basics](graphql/basics.md)
+
 #### javascript
 1. [electron](javascript/electron.md)
 2. [node](javascript/node.md)
