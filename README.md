@@ -12,6 +12,8 @@
     8. [security, identity and compliance](aws/acloud-guru/security-identity-and-compliance.md)
     9. [storage](aws/acloud-guru/storage.md)
 
+#### appium/selenium
+1. [appium basics](appium/basics.md)
 
 #### bash
 1. [basics](bash/basics.md)
