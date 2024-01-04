@@ -31,6 +31,12 @@ which implements the [WebDriver Specification][WebDriver Specification].
 Honestly though, please read the official explanation above, it is unmatched.
 
 ### References
+* [Appium](https://appium.io/docs/en/2.4/)
+* [How Does Appium Work?](https://appium.io/docs/en/2.4/intro/appium/)
+* [Appium Clients](https://appium.io/docs/en/2.4/ecosystem/clients/)
+* [WebDriver Specification](https://w3c.github.io/webdriver/webdriver-spec.html)
+
+<!-- links (should match above) -->
 [Appium]: https://appium.io/docs/en/2.4/
 [How Does Appium Work?]: https://appium.io/docs/en/2.4/intro/appium/
 [Appium Clients]: https://appium.io/docs/en/2.4/ecosystem/clients/
