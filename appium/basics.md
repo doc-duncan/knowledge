@@ -30,6 +30,10 @@ which implements the [WebDriver Specification][WebDriver Specification].
 
 Honestly though, please read the official explanation above, it is unmatched.
 
+Below is a simple diagram (credit to Appium for the sample code) that demonstrates the calls listed above.
+
+![flow](images/flow.jpg)
+
 ### References
 * [Appium](https://appium.io/docs/en/2.4/)
 * [How Does Appium Work?](https://appium.io/docs/en/2.4/intro/appium/)
